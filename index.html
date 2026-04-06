@@ -11,7 +11,7 @@
   html, body {
     height: 100%;
     font-family: 'DM Sans', sans-serif;
-    background: #f5f7f6;
+    background: #f0f4ff;
   }
 
   body {
@@ -25,16 +25,27 @@
 
   .app { width: 100%; max-width: 660px; }
 
-  .logo {
-    font-family: 'Sora', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #666;
+  /* LOGO */
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 2.5rem;
   }
-  .logo span { color: #1d9e75; }
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .logo-text {
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #022049;
+    letter-spacing: 0.02em;
+  }
+  .logo-text span { color: #0661de; }
 
   .screen { display: none; }
   .screen.active { display: block; }
@@ -43,20 +54,21 @@
     background: white;
     border-radius: 20px;
     padding: 2rem;
-    border: 1px solid #e8ebe9;
+    border: 1px solid #dbe4f5;
   }
 
+  /* INTRO */
   .intro-title {
     font-family: 'Sora', sans-serif;
     font-size: 30px;
     font-weight: 600;
     line-height: 1.25;
-    color: #0d1f18;
+    color: #022049;
     margin-bottom: 0.75rem;
   }
   .intro-sub {
     font-size: 15px;
-    color: #666;
+    color: #5a7099;
     line-height: 1.65;
     margin-bottom: 1.75rem;
   }
@@ -69,94 +81,95 @@
   .phase-box {
     flex: 1;
     min-width: 140px;
-    background: #f0faf6;
-    border: 1px solid #c5e8d8;
+    background: #eef3ff;
+    border: 1px solid #c0d0f0;
     border-radius: 14px;
     padding: 1rem;
   }
-  .phase-box .phase-num { font-size: 11px; font-weight: 600; color: #1d9e75; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
-  .phase-box .phase-title { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; color: #0d1f18; margin-bottom: 3px; }
-  .phase-box .phase-desc { font-size: 12px; color: #888; }
+  .phase-box .phase-num { font-size: 11px; font-weight: 600; color: #0661de; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
+  .phase-box .phase-title { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; color: #022049; margin-bottom: 3px; }
+  .phase-box .phase-desc { font-size: 12px; color: #7a90b8; }
 
+  /* PROGRESS */
   .progress-wrap { margin-bottom: 1.75rem; }
   .progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-  .progress-label { font-size: 13px; color: #888; }
-  .progress-phase { font-size: 12px; font-weight: 500; color: #1d9e75; background: #e1f5ee; padding: 3px 10px; border-radius: 100px; }
-  .progress-bar { height: 4px; background: #e8ebe9; border-radius: 100px; overflow: hidden; }
-  .progress-fill { height: 100%; background: #1d9e75; border-radius: 100px; transition: width 0.35s ease; }
+  .progress-label { font-size: 13px; color: #7a90b8; }
+  .progress-phase { font-size: 12px; font-weight: 500; color: #0661de; background: #eef3ff; padding: 3px 10px; border-radius: 100px; }
+  .progress-bar { height: 4px; background: #dbe4f5; border-radius: 100px; overflow: hidden; }
+  .progress-fill { height: 100%; background: #0661de; border-radius: 100px; transition: width 0.35s ease; }
 
   .q-text {
     font-family: 'Sora', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.45;
-    color: #0d1f18;
+    color: #022049;
     margin-bottom: 0.5rem;
   }
   .q-passage {
-    background: #f8faf9;
-    border-left: 3px solid #1d9e75;
+    background: #f5f8ff;
+    border-left: 3px solid #0661de;
     border-radius: 0 10px 10px 0;
     padding: 1rem 1.25rem;
     font-size: 14px;
     line-height: 1.7;
-    color: #444;
+    color: #3a5070;
     margin-bottom: 1.25rem;
   }
   .q-tag { display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; padding: 3px 10px; border-radius: 100px; margin-bottom: 1rem; }
   .tag-math { background: #fff3e0; color: #e65100; }
   .tag-rw { background: #e8f5e9; color: #2e7d32; }
-  .tag-diag { background: #e3f2fd; color: #1565c0; }
+  .tag-diag { background: #eef3ff; color: #0661de; }
 
   .options { display: flex; flex-direction: column; gap: 9px; margin-bottom: 1.5rem; }
   .option {
     padding: 13px 16px;
-    border: 1px solid #e0e5e2;
+    border: 1px solid #dbe4f5;
     border-radius: 12px;
     cursor: pointer;
     font-size: 15px;
     background: white;
-    color: #0d1f18;
+    color: #022049;
     text-align: left;
     transition: border-color 0.15s, background 0.15s;
     font-family: 'DM Sans', sans-serif;
     line-height: 1.4;
   }
-  .option:hover { border-color: #1d9e75; background: #f0faf6; }
-  .option.selected { border-color: #1d9e75; border-width: 2px; background: #e1f5ee; color: #0f6e56; font-weight: 500; }
+  .option:hover { border-color: #0661de; background: #f0f4ff; }
+  .option.selected { border-color: #0661de; border-width: 2px; background: #eef3ff; color: #0661de; font-weight: 500; }
   .option.correct { border-color: #2e7d32; border-width: 2px; background: #e8f5e9; color: #1b5e20; font-weight: 500; }
   .option.wrong { border-color: #c62828; border-width: 2px; background: #ffebee; color: #b71c1c; font-weight: 500; }
   .option.disabled { pointer-events: none; }
 
   .explanation {
-    background: #f8faf9;
+    background: #f5f8ff;
     border-radius: 12px;
     padding: 1rem 1.25rem;
     font-size: 14px;
     line-height: 1.6;
-    color: #444;
+    color: #3a5070;
     margin-bottom: 1.5rem;
-    border: 1px solid #e0e5e2;
+    border: 1px solid #dbe4f5;
     display: none;
   }
   .explanation.show { display: block; }
-  .explanation strong { color: #0d1f18; }
+  .explanation strong { color: #022049; }
 
   .nav-row { display: flex; justify-content: space-between; align-items: center; }
   .btn-back {
     background: none;
-    border: 1px solid #e0e5e2;
+    border: 1px solid #dbe4f5;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
-    color: #888;
+    color: #7a90b8;
     font-family: 'DM Sans', sans-serif;
     transition: background 0.15s;
   }
-  .btn-back:hover { background: #f5f7f6; }
+  .btn-back:hover { background: #f0f4ff; }
   .btn-next {
-    background: #1d9e75;
+    background: #0661de;
     color: white;
     border: none;
     padding: 11px 26px;
@@ -170,125 +183,107 @@
     font-family: 'DM Sans', sans-serif;
   }
   .btn-next.ready { opacity: 1; pointer-events: all; }
-  .btn-next:hover { background: #0f6e56; }
+  .btn-next:hover { background: #022049; }
 
-  .lead-title { font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 600; color: #0d1f18; margin-bottom: 0.5rem; }
-  .lead-sub { font-size: 15px; color: #666; margin-bottom: 1.75rem; line-height: 1.6; }
+  /* LEAD */
+  .lead-title { font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 600; color: #022049; margin-bottom: 0.5rem; }
+  .lead-sub { font-size: 15px; color: #5a7099; margin-bottom: 1.75rem; line-height: 1.6; }
   .field { margin-bottom: 1.25rem; }
-  .field label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; color: #555; }
+  .field label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; color: #3a5070; }
   .field input {
     width: 100%;
     padding: 12px 14px;
-    border: 1px solid #e0e5e2;
+    border: 1px solid #dbe4f5;
     border-radius: 10px;
     font-size: 15px;
     background: white;
-    color: #0d1f18;
+    color: #022049;
     font-family: 'DM Sans', sans-serif;
     outline: none;
     transition: border-color 0.15s;
   }
-  .field input:focus { border-color: #1d9e75; }
+  .field input:focus { border-color: #0661de; }
 
+  /* LOADING */
   .loading-state { text-align: center; padding: 4rem 2rem; }
   .spinner {
     width: 42px; height: 42px;
-    border: 3px solid #e0e5e2;
-    border-top-color: #1d9e75;
+    border: 3px solid #dbe4f5;
+    border-top-color: #0661de;
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
     margin: 0 auto 1.5rem;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* RESULT */
   .result-header {
-    background: linear-gradient(135deg, #1d9e75, #0f6e56);
+    background: linear-gradient(135deg, #0661de, #022049);
     border-radius: 16px;
     padding: 2rem;
     text-align: center;
     color: white;
     margin-bottom: 1.5rem;
   }
-  .result-header .rl { font-size: 13px; opacity: 0.8; margin-bottom: 0.5rem; }
+  .result-header .rl { font-size: 13px; opacity: 0.75; margin-bottom: 0.5rem; }
   .result-header .rs { font-family: 'Sora', sans-serif; font-size: 64px; font-weight: 600; line-height: 1; margin-bottom: 0.25rem; }
-  .result-header .rr { font-size: 14px; opacity: 0.75; }
+  .result-header .rr { font-size: 14px; opacity: 0.65; }
 
   .score-breakdown { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
   .score-box {
-    flex: 1;
-    min-width: 120px;
+    flex: 1; min-width: 120px;
     background: white;
-    border: 1px solid #e8ebe9;
+    border: 1px solid #dbe4f5;
     border-radius: 14px;
     padding: 1rem;
     text-align: center;
   }
-  .score-box .sb-label { font-size: 12px; color: #888; margin-bottom: 4px; }
-  .score-box .sb-val { font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 600; color: #0d1f18; }
-  .score-box .sb-sub { font-size: 11px; color: #aaa; margin-top: 2px; }
+  .score-box .sb-label { font-size: 12px; color: #7a90b8; margin-bottom: 4px; }
+  .score-box .sb-val { font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 600; color: #022049; }
+  .score-box .sb-sub { font-size: 11px; color: #aab8d0; margin-top: 2px; }
 
   .result-summary {
-    font-size: 15px;
-    line-height: 1.65;
-    color: #555;
-    margin-bottom: 1.5rem;
-    padding: 1rem 1.25rem;
-    background: #f8faf9;
-    border-radius: 12px;
-    border: 1px solid #e8ebe9;
+    font-size: 15px; line-height: 1.65; color: #3a5070;
+    margin-bottom: 1.5rem; padding: 1rem 1.25rem;
+    background: #f5f8ff; border-radius: 12px; border: 1px solid #dbe4f5;
   }
 
-  .section-title { font-family: 'Sora', sans-serif; font-size: 17px; font-weight: 600; color: #0d1f18; margin: 1.75rem 0 1rem; }
+  .section-title { font-family: 'Sora', sans-serif; font-size: 17px; font-weight: 600; color: #022049; margin: 1.75rem 0 1rem; }
 
   .plan-cards { display: flex; flex-direction: column; gap: 10px; margin-bottom: 2rem; }
-  .plan-card { border: 1px solid #e8ebe9; border-radius: 14px; padding: 1rem 1.25rem; background: white; display: flex; gap: 12px; align-items: flex-start; }
-  .plan-icon { width: 36px; height: 36px; flex-shrink: 0; background: #e1f5ee; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
-  .plan-card-title { font-weight: 500; font-size: 15px; color: #0d1f18; margin-bottom: 4px; }
-  .plan-card-body { font-size: 13px; color: #777; line-height: 1.55; }
+  .plan-card { border: 1px solid #dbe4f5; border-radius: 14px; padding: 1rem 1.25rem; background: white; display: flex; gap: 12px; align-items: flex-start; }
+  .plan-icon { width: 36px; height: 36px; flex-shrink: 0; background: #eef3ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .plan-card-title { font-weight: 500; font-size: 15px; color: #022049; margin-bottom: 4px; }
+  .plan-card-body { font-size: 13px; color: #5a7099; line-height: 1.55; }
 
-  .cta-box { background: #0d1f18; border-radius: 18px; padding: 2rem; text-align: center; color: white; }
+  .cta-box { background: #022049; border-radius: 18px; padding: 2rem; text-align: center; color: white; }
   .cta-box h3 { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 0.5rem; }
   .cta-box p { font-size: 14px; opacity: 0.7; margin-bottom: 1.5rem; line-height: 1.6; }
 
   .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #1d9e75;
-    color: white;
-    border: none;
-    padding: 13px 28px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-    transition: background 0.15s;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #0661de; color: white; border: none;
+    padding: 13px 28px; border-radius: 12px;
+    font-size: 15px; font-weight: 500; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; transition: background 0.15s;
     text-decoration: none;
   }
-  .btn-primary:hover { background: #0f6e56; }
+  .btn-primary:hover { background: #044ab0; }
 
-  /* FULLSCREEN BUTTON */
+  /* FULLSCREEN */
   .fs-btn {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    background: white;
-    border: 1px solid #e0e5e2;
-    border-radius: 10px;
-    padding: 8px 14px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #555;
-    cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    position: fixed; top: 16px; right: 16px;
+    background: white; border: 1px solid #dbe4f5;
+    border-radius: 10px; padding: 8px 14px;
+    font-size: 13px; font-weight: 500; color: #5a7099;
+    cursor: pointer; font-family: 'DM Sans', sans-serif;
+    z-index: 999; display: flex; align-items: center; gap: 6px;
     transition: background 0.15s;
   }
-  .fs-btn:hover { background: #f0faf6; color: #1d9e75; border-color: #1d9e75; }
+  .fs-btn:hover { background: #eef3ff; color: #0661de; border-color: #0661de; }
+
+  .error-msg { color: #c62828; font-size: 13px; margin-top: 8px; display: none; }
+  .error-msg.show { display: block; }
 
   @media (max-width: 500px) {
     .phase-row { flex-direction: column; }
@@ -300,11 +295,14 @@
 </head>
 <body>
 
-<!-- Fullscreen button -->
 <button class="fs-btn" onclick="toggleFullscreen()" id="fs-btn">⛶ Full screen</button>
 
 <div class="app">
-  <div class="logo">SAT <span>Samarkand</span></div>
+  <!-- LOGO -->
+  <div class="logo-wrap">
+    <img class="logo-img" src="https://shavkatovfaridun.github.io/sat-quiz/logo.png" alt="SAT Samarkand" onerror="this.style.display='none'">
+    <div class="logo-text">SAT <span>Samarkand</span></div>
+  </div>
 
   <!-- INTRO -->
   <div class="screen active card" id="screen-intro">
@@ -350,7 +348,11 @@
     <div class="lead-title">Your results are ready! 🎉</div>
     <div class="lead-sub">Enter your details to unlock your predicted SAT score and personalized study plan.</div>
     <div class="field"><label>Full name</label><input type="text" id="lead-name" placeholder="Your full name"></div>
-    <div class="field"><label>Phone number</label><input type="tel" id="lead-phone" placeholder="+998 XX XXX XX XX"></div>
+    <div class="field">
+      <label>Phone number</label>
+      <input type="tel" id="lead-phone" placeholder="+998 XX XXX XX XX">
+      <div class="error-msg" id="error-msg">Please enter both your name and phone number.</div>
+    </div>
     <button class="btn-primary" style="width:100%;justify-content:center;" onclick="showResult()">See my results →</button>
   </div>
 
@@ -358,8 +360,8 @@
   <div class="screen card" id="screen-loading">
     <div class="loading-state">
       <div class="spinner"></div>
-      <div style="font-family:'Sora',sans-serif;font-size:18px;font-weight:600;color:#0d1f18;margin-bottom:0.5rem;">Calculating your score...</div>
-      <div style="font-size:14px;color:#888;">Building your personalized study plan</div>
+      <div style="font-family:'Sora',sans-serif;font-size:18px;font-weight:600;color:#022049;margin-bottom:0.5rem;">Calculating your score...</div>
+      <div style="font-size:14px;color:#7a90b8;">Building your personalized study plan</div>
     </div>
   </div>
 
@@ -380,13 +382,15 @@
     <div class="plan-cards" id="plan-cards"></div>
     <div class="cta-box">
       <h3>Ready to reach your target score?</h3>
-      <p>Join SAT Samarkand. Expert instructors, small groups, proven results. Let's talk about your goals.</p>
+      <p>Join SAT Samarkand. Expert instructors, small groups, proven results.</p>
       <a class="btn-primary" href="https://t.me/sat_samarkand" target="_blank">Contact us on Telegram →</a>
     </div>
   </div>
 </div>
 
 <script>
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbw4g0FT_1NgYVm5Qf2oCHCLRBjB6VnWn2f1xUQki6bod6yYuf4Y24Zb45e-geI42ihUcA/exec";
+
 const diagQuestions = [
   { q: "Have you ever taken an official SAT exam before?", opts: ["Never", "Once", "2–3 times", "More than 3 times"], scores: [0, 40, 70, 90] },
   { q: "What was your most recent SAT score (or best estimate)?", opts: ["Below 900", "900–1050", "1050–1200", "Above 1200"], scores: [0, 30, 60, 90] },
@@ -532,17 +536,32 @@ function calcDiagScore() {
   return Math.round(raw / diagQuestions.length);
 }
 
-function showResult() {
+async function showResult() {
   const name = document.getElementById('lead-name').value.trim();
   const phone = document.getElementById('lead-phone').value.trim();
-  if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+  const err = document.getElementById('error-msg');
+  if (!name || !phone) { err.classList.add('show'); return; }
+  err.classList.remove('show');
+
   show('loading');
+
+  const diagPct = calcDiagScore();
+  const mathPct = satCorrect[0] / 5;
+  const rwPct = satCorrect[1] / 5;
+  let predicted = Math.round((400 + diagPct * 3.5 + (mathPct + rwPct) / 2 * 600) / 10) * 10;
+  predicted = Math.min(1580, Math.max(400, predicted));
+
+  // Save to Google Sheets
+  try {
+    await fetch(SHEET_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, phone, score: predicted })
+    });
+  } catch(e) { console.log("Sheet save failed", e); }
+
   setTimeout(() => {
-    const diagPct = calcDiagScore();
-    const mathPct = satCorrect[0] / 5;
-    const rwPct = satCorrect[1] / 5;
-    let predicted = Math.round((400 + diagPct * 3.5 + (mathPct + rwPct) / 2 * 600) / 10) * 10;
-    predicted = Math.min(1580, Math.max(400, predicted));
     const low = Math.max(400, predicted - 70);
     const high = Math.min(1600, predicted + 70);
 
@@ -586,13 +605,9 @@ function showResult() {
 function toggleFullscreen() {
   const btn = document.getElementById('fs-btn');
   if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().then(() => {
-      btn.textContent = '✕ Exit full screen';
-    });
+    document.documentElement.requestFullscreen().then(() => { btn.textContent = '✕ Exit full screen'; });
   } else {
-    document.exitFullscreen().then(() => {
-      btn.textContent = '⛶ Full screen';
-    });
+    document.exitFullscreen().then(() => { btn.textContent = '⛶ Full screen'; });
   }
 }
 
