@@ -415,16 +415,16 @@ const diagQuestions = [
 ];
 
 const satQuestions = [
-  { type:"math", q:"If 3x + 7 = 22, what is the value of x?", opts:["3","5","7","15"], correct:1, explanation:"Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5." },
-  { type:"math", q:"A store sells a jacket for $120 after a 20% discount. What was the original price?", opts:["$140","$144","$150","$160"], correct:2, explanation:"If the discounted price is 80% of the original, then original = 120 ÷ 0.80 = $150." },
-  { type:"math", passage:"A line passes through the points (0, 3) and (4, 11).", q:"What is the slope of the line?", opts:["1","2","3","4"], correct:1, explanation:"Slope = (y₂ - y₁) / (x₂ - x₁) = (11 - 3) / (4 - 0) = 8 / 4 = 2." },
-  { type:"math", q:"If f(x) = 2x² - 3x + 1, what is f(3)?", opts:["8","10","12","16"], correct:1, explanation:"f(3) = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10." },
-  { type:"math", q:"The average of five numbers is 14. Four of them are 10, 12, 16, and 18. What is the fifth?", opts:["12","13","14","15"], correct:2, explanation:"Total = 5 × 14 = 70. Sum of four = 56. Fifth = 70 - 56 = 14." },
-  { type:"rw", passage:"The ancient city of Samarkand was a major hub of the Silk Road, connecting traders from China, Persia, and Europe. Its architecture, particularly the Registan complex, reflects a blend of artistic traditions from across Eurasia.", q:"Which choice best states the main idea of the passage?", opts:["Samarkand's architecture was built by European designers.","Samarkand's location and culture were shaped by its role as a trade crossroads.","The Registan complex is the oldest building in Central Asia.","Trade on the Silk Road was primarily controlled by Persian merchants."], correct:1, explanation:"The passage focuses on Samarkand's role as a Silk Road hub and how this shaped its cultural and architectural identity." },
-  { type:"rw", passage:"Many scientists argue that microplastics — tiny plastic particles less than 5mm — have become pervasive in ecosystems worldwide. They have been detected in ocean water, freshwater rivers, soil, and even the air we breathe.", q:"As used in the passage, 'pervasive' most nearly means:", opts:["dangerous","widespread","invisible","synthetic"], correct:1, explanation:"'Pervasive' means spread throughout. The passage describes microplastics found in oceans, rivers, soil, and air — confirming 'widespread.'" },
-  { type:"rw", passage:"The committee reviewed three proposals. Proposal A was most cost-effective but required the longest timeline. Proposal B was faster but more expensive. Proposal C balanced cost and time but lacked technical detail.", q:"Which proposal would be best for a team with a limited budget but no strict deadline?", opts:["Proposal A","Proposal B","Proposal C","None of the proposals"], correct:0, explanation:"Proposal A is most cost-effective — fitting a limited budget — and its longer timeline is not a problem since there is no strict deadline." },
-  { type:"rw", q:"Choose the option that best completes the sentence: 'The researcher's findings were ______, contradicting decades of established scientific consensus.'", opts:["predictable","controversial","irrelevant","traditional"], correct:1, explanation:"'Controversial' fits because findings that contradict established consensus would be disputed and debated." },
-  { type:"rw", passage:"Urban green spaces — parks, gardens, and tree-lined streets — have been linked to improved mental health outcomes in city residents. Studies show that access to nature, even in small doses, reduces stress hormones and improves mood.", q:"Which statement is best supported by the passage?", opts:["Cities should replace all roads with parks.","Mental health treatment should be moved outdoors.","Even limited access to nature in cities can benefit mental health.","Stress hormones are only affected by large natural environments."], correct:2, explanation:"The passage states 'access to nature, even in small doses' improves mood — directly supporting option C." }
+  { type:"math", q:"If 3x + 7 = 22, what is the value of x?", opts:["3","5","7","15"], correct:1, explanation:"Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5.", difficulty: 1 },
+  { type:"math", q:"A store sells a jacket for $120 after a 20% discount. What was the original price?", opts:["$140","$144","$150","$160"], correct:2, explanation:"If the discounted price is 80% of the original, then original = 120 ÷ 0.80 = $150.", difficulty: 2 },
+  { type:"math", passage:"A line passes through the points (0, 3) and (4, 11).", q:"What is the slope of the line?", opts:["1","2","3","4"], correct:1, explanation:"Slope = (y₂ - y₁) / (x₂ - x₁) = (11 - 3) / (4 - 0) = 8 / 4 = 2.", difficulty: 2 },
+  { type:"math", q:"If f(x) = 2x² - 3x + 1, what is f(3)?", opts:["8","10","12","16"], correct:1, explanation:"f(3) = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10.", difficulty: 3 },
+  { type:"math", q:"The average of five numbers is 14. Four of them are 10, 12, 16, and 18. What is the fifth?", opts:["12","13","14","15"], correct:2, explanation:"Total = 5 × 14 = 70. Sum of four = 56. Fifth = 70 - 56 = 14.", difficulty: 2 },
+  { type:"rw", passage:"The ancient city of Samarkand was a major hub of the Silk Road, connecting traders from China, Persia, and Europe. Its architecture, particularly the Registan complex, reflects a blend of artistic traditions from across Eurasia.", q:"Which choice best states the main idea of the passage?", opts:["Samarkand's architecture was built by European designers.","Samarkand's location and culture were shaped by its role as a trade crossroads.","The Registan complex is the oldest building in Central Asia.","Trade on the Silk Road was primarily controlled by Persian merchants."], correct:1, explanation:"The passage focuses on Samarkand's role as a Silk Road hub and how this shaped its cultural and architectural identity.", difficulty: 1 },
+  { type:"rw", passage:"Many scientists argue that microplastics — tiny plastic particles less than 5mm — have become pervasive in ecosystems worldwide. They have been detected in ocean water, freshwater rivers, soil, and even the air we breathe.", q:"As used in the passage, 'pervasive' most nearly means:", opts:["dangerous","widespread","invisible","synthetic"], correct:1, explanation:"'Pervasive' means spread throughout. The passage describes microplastics found in oceans, rivers, soil, and air — confirming 'widespread.'", difficulty: 2 },
+  { type:"rw", passage:"The committee reviewed three proposals. Proposal A was most cost-effective but required the longest timeline. Proposal B was faster but more expensive. Proposal C balanced cost and time but lacked technical detail.", q:"Which proposal would be best for a team with a limited budget but no strict deadline?", opts:["Proposal A","Proposal B","Proposal C","None of the proposals"], correct:0, explanation:"Proposal A is most cost-effective — fitting a limited budget — and its longer timeline is not a problem since there is no strict deadline.", difficulty: 2 },
+  { type:"rw", q:"Choose the option that best completes the sentence: 'The researcher's findings were ______, contradicting decades of established scientific consensus.'", opts:["predictable","controversial","irrelevant","traditional"], correct:1, explanation:"'Controversial' fits because findings that contradict established consensus would be disputed and debated.", difficulty: 2 },
+  { type:"rw", passage:"Urban green spaces — parks, gardens, and tree-lined streets — have been linked to improved mental health outcomes in city residents. Studies show that access to nature, even in small doses, reduces stress hormones and improves mood.", q:"Which statement is best supported by the passage?", opts:["Cities should replace all roads with parks.","Mental health treatment should be moved outdoors.","Even limited access to nature in cities can benefit mental health.","Stress hormones are only affected by large natural environments."], correct:2, explanation:"The passage states 'access to nature, even in small doses' improves mood — directly supporting option C.", difficulty: 2 }
 ];
 
 const allQuestions = [...diagQuestions.map(q => ({...q, type:'diag'})), ...satQuestions];
@@ -433,6 +433,7 @@ let current = 0;
 let diagAnswers = new Array(20).fill(null);
 let satAnswers = new Array(10).fill(null);
 let satCorrect = [0, 0];
+let satDifficultyScored = { math: 0, rw: 0 };
 
 function show(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -507,13 +508,22 @@ function selectDiag(i) {
 
 function selectSAT(i) {
   const q = allQuestions[current];
-  satAnswers[current - 20] = i;
-  if (i === q.correct) { if (q.type === 'math') satCorrect[0]++; else satCorrect[1]++; }
+  const qIdx = current - 20;
+  satAnswers[qIdx] = i;
+
+  if (i === q.correct) {
+    // Weight by difficulty: easy=1pt, medium=2pt, hard=3pt
+    const pts = q.difficulty || 1;
+    if (q.type === 'math') { satCorrect[0]++; satDifficultyScored.math += pts; }
+    else { satCorrect[1]++; satDifficultyScored.rw += pts; }
+  }
+
   document.querySelectorAll('.option').forEach((b, idx) => {
     b.classList.add('disabled');
     if (idx === q.correct) b.classList.add('correct');
     else if (idx === i) b.classList.add('wrong');
   });
+
   const explanation = document.getElementById('explanation');
   explanation.innerHTML = `<strong>${i === q.correct ? '✓ Correct!' : '✗ Incorrect.'}</strong> ${q.explanation}`;
   explanation.classList.add('show');
@@ -530,10 +540,93 @@ function prevQ() {
   if (current > 0) { current--; renderQ(); }
 }
 
-function calcDiagScore() {
-  let raw = 0;
-  diagQuestions.forEach((q, i) => { if (diagAnswers[i] !== null) raw += q.scores[diagAnswers[i]]; });
-  return Math.round(raw / diagQuestions.length);
+// ─── IMPROVED SCORING ENGINE ───────────────────────────────────────────────
+
+function calcScore() {
+  // --- 1. SAT SECTION SCORES (200–800 each, most predictive signal) ---
+
+  // Math: max difficulty points possible = 1+2+2+3+2 = 10
+  const mathMaxPts = 10;
+  const mathRaw = satDifficultyScored.math / mathMaxPts; // 0.0 to 1.0
+
+  // RW: max difficulty points possible = 1+2+2+2+2 = 9
+  const rwMaxPts = 9;
+  const rwRaw = satDifficultyScored.rw / rwMaxPts; // 0.0 to 1.0
+
+  // Scale each section 200–800
+  const mathSection = Math.round((200 + mathRaw * 600) / 10) * 10;
+  const rwSection   = Math.round((200 + rwRaw   * 600) / 10) * 10;
+
+  // SAT performance base (weight: 65%)
+  const satBase = mathSection + rwSection; // 400–1600
+
+  // --- 2. DIAGNOSTIC ADJUSTMENT (weight: 35%) ---
+  // High-signal questions only (previous score, study hours, reading/math self-rating)
+  // Q1=previous SAT, Q3=study hours, Q4=English reading, Q5=math comfort, Q9=prep done
+
+  const highSignalIdx  = [1, 3, 4, 5, 9]; // most predictive
+  const medSignalIdx   = [2, 6, 7, 8, 14, 15]; // moderately predictive
+  const lowSignalIdx   = [0, 10, 11, 12, 13, 16, 17, 18, 19]; // low predictive value
+
+  let diagRaw = 0;
+  let diagMax = 0;
+
+  highSignalIdx.forEach(i => {
+    if (diagAnswers[i] !== null) {
+      diagRaw += diagQuestions[i].scores[diagAnswers[i]] * 3;
+      diagMax += Math.max(...diagQuestions[i].scores) * 3;
+    }
+  });
+  medSignalIdx.forEach(i => {
+    if (diagAnswers[i] !== null) {
+      diagRaw += diagQuestions[i].scores[diagAnswers[i]] * 1.5;
+      diagMax += Math.max(...diagQuestions[i].scores) * 1.5;
+    }
+  });
+  lowSignalIdx.forEach(i => {
+    if (diagAnswers[i] !== null) {
+      diagRaw += diagQuestions[i].scores[diagAnswers[i]] * 0.5;
+      diagMax += Math.max(...diagQuestions[i].scores) * 0.5;
+    }
+  });
+
+  const diagPct = diagMax > 0 ? diagRaw / diagMax : 0.5; // 0.0 to 1.0
+  const diagAdj = (diagPct - 0.5) * 200; // -100 to +100 adjustment
+
+  // --- 3. CONSISTENCY CHECK ---
+  // Compare self-reported level (Q1=previous score) vs SAT performance
+  // If they claim high but score low → widen range & pull score down slightly
+  const claimedLevelIdx = diagAnswers[1] ?? 1; // 0=below900, 1=900-1050, 2=1050-1200, 3=above1200
+  const claimedMidpoints = [850, 975, 1125, 1300];
+  const claimedMid = claimedMidpoints[claimedLevelIdx];
+  const satPerf = satBase;
+  const gap = Math.abs(claimedMid - satPerf);
+
+  // Overconfidence penalty: if claimed much higher than performance
+  let consistencyPenalty = 0;
+  if (claimedMid > satPerf + 150) consistencyPenalty = -40; // overconfident
+  if (claimedMid < satPerf - 150) consistencyPenalty = +20; // underestimating self
+
+  // --- 4. COMBINE ---
+  // 65% SAT performance + 35% diagnostic, then consistency adjustment
+  let predicted = Math.round(
+    (satBase * 0.65 + (400 + diagPct * 1200) * 0.35 + diagAdj * 0.3 + consistencyPenalty) / 10
+  ) * 10;
+
+  predicted = Math.min(1560, Math.max(420, predicted));
+
+  // --- 5. DYNAMIC RANGE ---
+  // Wider range when: fewer SAT correct, inconsistent answers, low confidence
+  const satAccuracy = (satCorrect[0] + satCorrect[1]) / 10; // 0–1
+  const baseRange = 100;
+  const accuracyBonus = (1 - satAccuracy) * 60; // more wrong = wider range
+  const consistencyBonus = gap > 150 ? 40 : gap > 80 ? 20 : 0;
+  const halfRange = Math.round((baseRange + accuracyBonus + consistencyBonus) / 10) * 10;
+
+  const low  = Math.max(400,  predicted - halfRange);
+  const high = Math.min(1600, predicted + halfRange);
+
+  return { predicted, low, high, mathSection, rwSection, diagPct: Math.round(diagPct * 100) };
 }
 
 async function showResult() {
@@ -545,11 +638,7 @@ async function showResult() {
 
   show('loading');
 
-  const diagPct = calcDiagScore();
-  const mathPct = satCorrect[0] / 5;
-  const rwPct = satCorrect[1] / 5;
-  let predicted = Math.round((400 + diagPct * 3.5 + (mathPct + rwPct) / 2 * 600) / 10) * 10;
-  predicted = Math.min(1580, Math.max(400, predicted));
+  const { predicted, low, high, mathSection, rwSection, diagPct } = calcScore();
 
   // Save to Google Sheets
   try {
@@ -562,9 +651,6 @@ async function showResult() {
   } catch(e) { console.log("Sheet save failed", e); }
 
   setTimeout(() => {
-    const low = Math.max(400, predicted - 70);
-    const high = Math.min(1600, predicted + 70);
-
     document.getElementById('result-score').textContent = predicted;
     document.getElementById('result-range').textContent = `Range: ${low} – ${high}`;
     document.getElementById('math-score').textContent = `${satCorrect[0]}/5`;
@@ -578,18 +664,20 @@ async function showResult() {
     const weakMath = satCorrect[0] < 3;
     const weakRW = satCorrect[1] < 3;
 
-    let summary = `${name}, based on your diagnostic and SAT performance, your predicted score is ${predicted}. `;
-    if (predicted >= 1300) summary += `You're already performing at a strong level. Targeted practice can push you into the top tier.`;
-    else if (predicted >= 1100) summary += `You have a solid foundation. With ${months} months of focused prep, reaching ${target} is realistic.`;
-    else summary += `There's clear room to grow. With consistent study over ${months} months, you can make significant gains.`;
+    let summary = `${name}, your predicted SAT score is ${predicted} (range: ${low}–${high}). `;
+    if (predicted >= 1350) summary += `You're already at a strong level. Strategic practice on your weak spots can push you above 1400.`;
+    else if (predicted >= 1150) summary += `You have a solid foundation. With ${months} months of focused prep, reaching ${target} is very achievable.`;
+    else if (predicted >= 950) summary += `You're at a building stage. Consistent daily study over ${months} months can produce significant score gains.`;
+    else summary += `There's a lot of room to grow — and that's good news. A structured course over ${months} months can make a dramatic difference.`;
+
     document.getElementById('result-summary').textContent = summary;
 
     const plans = [
-      { icon:'📅', title:`${hoursPerWeek}h/week study schedule`, body:`A ${months}-month plan with ${Math.ceil(hoursPerWeek/2)}h sessions, 3–4 days a week. Include one full practice test every 2–3 weeks.` },
-      { icon: weakMath ? '⚠️' : '✅', title: weakMath ? 'Math: Priority area' : 'Math: Maintain momentum', body: weakMath ? `You got ${satCorrect[0]}/5 on Math. Focus on algebra, linear equations, and word problems. Use Khan Academy SAT Math daily (free).` : `You got ${satCorrect[0]}/5 on Math. Keep doing timed problem sets — focus on quadratics, systems of equations, and data analysis.` },
-      { icon: weakRW ? '⚠️' : '✅', title: weakRW ? 'Reading & Writing: Priority area' : 'Reading & Writing: Sharpen skills', body: weakRW ? `You got ${satCorrect[1]}/5 on Reading & Writing. Practice reading academic passages daily. Focus on main idea, inference, and vocabulary in context.` : `You got ${satCorrect[1]}/5 on Reading & Writing. Work on grammar rules, transitions, and time management on long passages.` },
-      { icon:'📝', title:'Practice test schedule', body:`Take 1 full-length official SAT practice test every ${Math.ceil(months/3)} weeks. Always review every wrong answer within 24 hours.` },
-      { icon:'🎯', title:`Goal: ${target} in ${months} month${months>1?'s':''}`, body:`${hoursPerWeek < 4 ? 'Consider adding 2 more study hours per week to hit your goal faster.' : 'Your planned hours are strong — consistency is the key factor now.'}` }
+      { icon:'📅', title:`${hoursPerWeek}h/week, ${months}-month plan`, body:`${Math.ceil(hoursPerWeek/2)}h sessions, 3–4 days a week. One full practice test every ${Math.ceil(months/3)} weeks with thorough review.` },
+      { icon: weakMath ? '⚠️' : '✅', title: weakMath ? 'Math: Needs focused work' : 'Math: Keep it sharp', body: weakMath ? `${satCorrect[0]}/5 correct. Start with algebra and linear equations, then advance to quadratics and data analysis. Khan Academy SAT Math is free and excellent.` : `${satCorrect[0]}/5 correct. Strong base — push into harder topics: systems of equations, advanced functions, and geometry proofs.` },
+      { icon: weakRW ? '⚠️' : '✅', title: weakRW ? 'Reading & Writing: Needs focused work' : 'Reading & Writing: Keep it sharp', body: weakRW ? `${satCorrect[1]}/5 correct. Read one academic article daily. Practice identifying main idea, author's purpose, and vocabulary in context.` : `${satCorrect[1]}/5 correct. Focus on grammar rules, rhetorical purpose questions, and managing time on paired passages.` },
+      { icon:'📝', title:'Official practice tests', body:`Use College Board's free official SAT practice tests (8 available at collegeboard.org). Simulate real test conditions — timed, no distractions.` },
+      { icon:'🎯', title:`Target: ${target} in ${months} month${months>1?'s':''}`, body:`${hoursPerWeek < 4 ? 'Adding just 2 more hours per week could move your score up by 50–80 points.' : 'Your time commitment is solid. Focus now on quality over quantity — deep review beats more practice without reflection.'}` }
     ];
 
     const planCards = document.getElementById('plan-cards');
